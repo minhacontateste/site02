@@ -12,30 +12,30 @@ function verificar(){
         var genero = fsex[0].checked ? 'Homem':'Mulher'
         
         if(genero === "Homem" && idade <= 12){
-            img.src = "./images/foto-bebe-m.png"
+            img.src = "./foto-bebe-m.png"
         } else if(genero === "Homem" && idade <= 30 && idade >= 13){
-            img.src = "./images/foto-jovem-m.png"
+            img.src = "./foto-jovem-m.png"
         } else if(genero === "Homem" && idade > 30 && idade < 65){
-            img.src = "./images/foto-adulto-m.png"
+            img.src = "./foto-adulto-m.png"
         } else if(genero === "Homem" && idade >= 65){
-            img.src = "./images/foto-idoso-m.png"
+            img.src = "./foto-idoso-m.png"
         }
 
         if(genero === "Mulher" && idade <= 12){
-            img.src = "./images/foto-bebe-f.png"
+            img.src = "./foto-bebe-f.png"
         } else if(genero === "Mulher" && idade <= 30 && idade >= 13){
-            img.src = "./images/foto-jovem-f.png"
+            img.src = "./foto-jovem-f.png"
         } else if(genero === "Mulher" && idade > 30 && idade < 65){
-            img.src = "./images/foto-adulto-f.png"
+            img.src = "./foto-adulto-f.png"
         } else if(genero === "Mulher" && idade >= 65){
-            img.src = "./images/foto-idoso-f.png"
+            img.src = "./foto-idoso-f.png"
         }
 
         if(idade < 105){
             res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
         } else{
             res.innerHTML = `Detectamos Dinossauro com ${idade} anos.`
-            img.src = "./images/dino.png"
+            img.src = "./dino.png"
         }
     }
     
